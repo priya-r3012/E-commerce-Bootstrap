@@ -1,0 +1,82 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.hero{
+    padding:40px 0;
+
+    .hero-banner{
+        position:relative;
+        height:650px;
+        border-radius:30px;
+        overflow:hidden;
+        background:$light;
+
+        .hero-image{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .hero-content{
+            position:absolute;
+            top:70px;
+            left:60px;
+            color:$white;
+            max-width:420px;
+
+            h1{
+                font-size:72px;
+                font-weight:700;
+                line-height:1;
+                margin-bottom:25px;
+            }
+
+            p{
+                font-size:18px;
+                line-height:1.7;
+                margin-bottom:35px;
+            }
+
+            .hero-btn{
+                background:$primary;
+                color:$white;
+                padding:15px 38px;
+                border-radius:50px;
+                font-weight:600;
+                text-decoration:none;
+                transition:.3s;
+
+                &:hover{
+                    background:#222;
+                    color:$white;
+                }
+            }
+        }
+    }
+
+    .small-card{
+        position:relative;
+        height:310px;
+        overflow:hidden;
+        border-radius:25px;
+
+        img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .card-title{
+            position:absolute;
+            top:30px;
+            left:30px;
+
+            h2{
+                font-size:42px;
+                font-weight:600;
+                color:$primary;
+                line-height:1.1;
+            }
+        }
+    }
+}

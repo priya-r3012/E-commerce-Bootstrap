@@ -1,0 +1,21 @@
+@mixin flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+@mixin flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin transition{
+    transition:.3s ease;
+}
+
+@mixin input-style{
+    border:none;
+    outline:none;
+    background:transparent;
+}

@@ -1,0 +1,89 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.top-header{
+
+    padding:12px 0;
+    border-bottom:1px solid $border;
+    background:$white;
+
+    .language{
+        display:flex;
+        gap:20px;
+
+        a{
+            color:$secondary;
+            font-size:14px;
+        }
+    }
+
+    .top-menu{
+
+        @include flex-between;
+
+        li a{
+            color:$secondary;
+            font-size:14px;
+
+            &:hover{
+                color:$primary;
+            }
+        }
+    }
+}
+
+.navbar{
+
+    padding:22px 0;
+    background:$white;
+
+    .navbar-brand{
+        font-size:40px;
+        font-weight:700;
+    }
+
+    .search-box{
+
+        position:relative;
+        width:420px;
+
+        input{
+
+            width:100%;
+            padding:12px 45px 12px 20px;
+            border:1px solid $border;
+            border-radius:$radius;
+
+            @include input-style;
+        }
+
+        button{
+
+            position:absolute;
+            right:15px;
+            top:50%;
+            transform:translateY(-50%);
+            border:none;
+            background:none;
+        }
+    }
+
+    .nav-link{
+
+        font-weight:500;
+        margin:0 15px;
+        color:$primary;
+    }
+
+    .header-icons{
+
+        display:flex;
+        gap:25px;
+        margin-left:30px;
+
+        i{
+            font-size:22px;
+            color:$primary;
+        }
+    }
+}

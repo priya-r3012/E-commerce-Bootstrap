@@ -1,8 +1,4 @@
-// =====================================
-//  MAIN ENTRY
-// =====================================
-// Order matters: our variables + overrides must load BEFORE Bootstrap so
-// Bootstrap's `!default` variables pick up our brand colors/fonts/radius.
+
 
 @import "./variables";
 @import "./mixins.scss";

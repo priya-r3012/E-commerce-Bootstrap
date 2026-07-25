@@ -1,4 +1,4 @@
-.inspire-card {
+.inspiration-card {
   min-height: 280px;
 
   img {
@@ -9,13 +9,13 @@
     content: "";
     position: absolute;
     inset: 0;
-    // background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 55%);
+    
   }
 
   i {
     width: 34px;
     height: 34px;
-    // color: $primary-color;
+    
   }
 
   span {
@@ -24,8 +24,8 @@
   }
 }
 
-.product-card {
-  .product-image {
+.shoes-card {
+  .shoes-image {
     height: 290px;
     background: #f7f7f7;
     border-radius: 24px;
@@ -37,13 +37,7 @@
       width: 100%;
     }
   }
-// .product-image.wide {
-//     height: 320px;
-// }
 
-// .product-image.wide img {
-//     object-fit: contain;
-// }
   .fav {
     top: 14px;
     right: 14px;
@@ -115,7 +109,7 @@
 }
 .testimonial-copy , p{
 font-size:13px;
-// font-weight: 400;
+
 } 
 .testimonial-copy , h2{
   font-weight: 400;

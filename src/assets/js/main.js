@@ -3,7 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../scss/main.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Product favorite / heart toggle
+ 
   const favButtons = document.querySelectorAll(".fav");
   favButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Newsletter form (footer) - prevent real submit, just demo
+ 
   const newsletterForm = document.querySelector(".newsletter-form");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", (e) => {

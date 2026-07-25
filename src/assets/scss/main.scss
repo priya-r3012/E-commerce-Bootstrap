@@ -1,6 +1,15 @@
-@use "variables";
-@use "mixins";
-@use "common";
-@use "header";
-@use "hero";
-@use "responsive";
+// =====================================
+//  MAIN ENTRY
+// =====================================
+// Order matters: our variables + overrides must load BEFORE Bootstrap so
+// Bootstrap's `!default` variables pick up our brand colors/fonts/radius.
+
+@import "./variables";
+@import "./mixins.scss";
+@import "bootstrap/scss/bootstrap";
+
+@import "./common";
+@import "./header";
+@import "./hero";
+@import "./styles";
+@import "./responsive";

@@ -1,89 +1,40 @@
-@use "variables" as *;
-@use "mixins" as *;
+.topbar {
+  border-bottom: 1px solid $border-color;
+  font-size: 13px;
+  color: $secondary-color;
 
-.top-header{
-
-    padding:12px 0;
-    border-bottom:1px solid $border;
-    background:$white;
-
-    .language{
-        display:flex;
-        gap:20px;
-
-        a{
-            color:$secondary;
-            font-size:14px;
-        }
-    }
-
-    .top-menu{
-
-        @include flex-between;
-
-        li a{
-            color:$secondary;
-            font-size:14px;
-
-            &:hover{
-                color:$primary;
-            }
-        }
-    }
+  a:hover {
+    color: $primary-color;
+  }
 }
 
-.navbar{
+.header {
+  .search {
+    position: relative;
+    flex: 1;
+    max-width: 340px;
 
-    padding:22px 0;
-    background:$white;
-
-    .navbar-brand{
-        font-size:40px;
-        font-weight:700;
+    input:focus {
+      border-color: $primary-color;
+      box-shadow: none;
     }
 
-    .search-box{
-
-        position:relative;
-        width:420px;
-
-        input{
-
-            width:100%;
-            padding:12px 45px 12px 20px;
-            border:1px solid $border;
-            border-radius:$radius;
-
-            @include input-style;
-        }
-
-        button{
-
-            position:absolute;
-            right:15px;
-            top:50%;
-            transform:translateY(-50%);
-            border:none;
-            background:none;
-        }
+    i {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $secondary-color;
+      pointer-events: none;
     }
+  }
 
-    .nav-link{
+  nav a:hover,
+  .icons a:hover {
+    color: $sage-green-dark;
+  }
 
-        font-weight:500;
-        margin:0 15px;
-        color:$primary;
-    }
-
-    .header-icons{
-
-        display:flex;
-        gap:25px;
-        margin-left:30px;
-
-        i{
-            font-size:22px;
-            color:$primary;
-        }
-    }
+  .dropdown-menu {
+    --bs-dropdown-min-width: 12rem;
+  }
 }
